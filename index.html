@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AlugaTudo</title>
+  <link rel="shortcut icon" href="img/fav 48.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <h1 class="logo">AlugaTudo</h1>
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Produtos disponíveis</h2>
+    <section class="produtos">
+      <!-- Produto 1 -->
+      <div class="card">
+        <img src="img/xbox seris x 300x300.jpg" alt="Xbox Series X" />
+        <h3>Xbox Series X</h3>
+        <p>R$ 120,00 / dia</p>
+        <button class="open-modal">Alugar</button>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="card">
+        <img src="img/ps5 300X300.jpg" alt="Playstation 5" />
+        <h3>Playstation 5</h3>
+        <p>R$ 140,00 / dia</p>
+        <button class="open-modal">Alugar</button>
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="card">
+        <img src="img/controle branco.jpg" alt="Controle PS5 Roxo" />
+        <h3>Controle PS5 Roxo</h3>
+        <p>R$ 60,00 / dia</p>
+        <button class="open-modal">Alugar</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-modal" class="close">&times;</span>
+      <h2>Aluguel solicitado!</h2>
+      <p>Entraremos em contato para finalizar o processo.</p>
+      <button id="close-modal" class="btn-fechar">Fechar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
